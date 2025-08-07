@@ -1,0 +1,47 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header and Navigation Styles */
+header {
+    background-color: #004a99; /* A professional blue color */
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style-type: none; /* Removes the bullet points */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block; /* Makes the list items appear side-by-side */
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none; /* Removes the underline from links */
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Main Content Styles */
+h1 {
+    text-align: center;
+    color: #003366;
+    margin-top: 40px;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+    padding: 0 20px;
+}
