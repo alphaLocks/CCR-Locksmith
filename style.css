@@ -14,33 +14,49 @@ body {
     padding: 0 20px;
 }
 
-/* --- New Header & Navigation --- */
+/* --- Header & Navigation (UPDATED) --- */
 .top-header {
     background-color: #2c3e50; /* Dark blue/grey background */
     color: #ffffff;
-    padding: 20px 0;
+    padding: 30px 0; /* Increased vertical space so the larger logo has breathing room */
 }
 
 .top-header-content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 40px; /* Space between logo and contact blocks */
+    flex-wrap: wrap; /* Allows stacking on smaller screens */
 }
 
+/*
+   Reserve a wider, fixed‑width column for the logo so it is not compressed by long contact text.
+   Center the logo vertically and horizontally within that column.
+*/
+.top-header .logo {
+    flex: 0 0 220px; /* Fixed width for consistent layout */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Enlarged logo while keeping it responsive. 120 px fits nicely in a 70 px‑high header. */
 .top-header .logo img {
-    height: 90px; /* Increased logo size */
+    max-height: 120px;
     width: auto;
 }
 
 .header-info-wrapper {
     display: flex;
-    gap: 40px; /* Space between contact items */
+    gap: 40px;
+    flex: 1; /* Take the remaining width */
+    justify-content: flex-end; /* Push contact info to the right */
+    flex-wrap: wrap; /* Wrap if not enough room */
 }
 
 .header-info-item {
     display: flex;
     align-items: center;
-    gap: 15px; /* Space between icon and text */
+    gap: 15px;
 }
 
 .header-info-item .icon {
@@ -60,13 +76,15 @@ body {
     font-weight: 400;
 }
 
-.header-info-item a, .header-info-item span {
+.header-info-item a,
+.header-info-item span {
     color: #ffffff;
     text-decoration: none;
     font-size: 15px;
     font-weight: 700;
 }
 
+/* --- Navigation --- */
 .main-nav {
     background-color: #FFDE59; /* Yellow navigation bar */
     border-bottom: 2px solid #e0c04c;
@@ -98,7 +116,7 @@ body {
 }
 
 .main-nav ul li a:hover {
-    background-color: rgba(0, 0, 0, 0.1); /* Slight darken on hover */
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 /* --- Hero Section --- */
@@ -135,25 +153,31 @@ body {
 }
 
 /* --- Services & Features Sections --- */
-.services-overview, .why-choose-us, .service-areas {
+.services-overview,
+.why-choose-us,
+.service-areas {
     padding: 60px 0;
     background-color: #ffffff;
     border-top: 1px solid #e0e0e0;
 }
 
-.services-overview h2, .why-choose-us h2, .service-areas h2 {
+.services-overview h2,
+.why-choose-us h2,
+.service-areas h2 {
     text-align: center;
     font-size: 36px;
     margin-bottom: 40px;
 }
 
-.services-grid, .features-grid {
+.services-grid,
+.features-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
 }
 
-.service-card, .feature-item {
+.service-card,
+.feature-item {
     background-color: #f9f9f9;
     padding: 30px;
     border: 1px solid #e0e0e0;
@@ -161,7 +185,8 @@ body {
     text-align: center;
 }
 
-.service-card h3, .feature-item h3 {
+.service-card h3,
+.feature-item h3 {
     font-size: 22px;
     margin-top: 0;
     margin-bottom: 15px;
@@ -196,10 +221,10 @@ body {
     padding: 0;
 }
 
-/* --- New Footer Section --- */
+/* --- Footer Section --- */
 footer {
-    background-color: #2c3e50; /* Dark, professional blue/grey */
-    color: #bdc3c7; /* Lighter text color for readability */
+    background-color: #2c3e50;
+    color: #bdc3c7;
     padding: 50px 0 20px 0;
     text-align: left;
     font-size: 15px;
@@ -279,8 +304,8 @@ footer {
         text-align: center;
         gap: 20px;
     }
-    .header-info-item {
-        justify-content: center;
+    .top-header .logo {
+        flex-basis: auto; /* let it shrink */
     }
     .footer-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -295,14 +320,18 @@ footer {
     .main-nav ul li:last-child {
         border-bottom: none;
     }
-    .services-grid, .features-grid, .area-list-container {
+    .services-grid,
+    .features-grid,
+    .area-list-container {
         grid-template-columns: 1fr;
         flex-direction: column;
     }
     .hero h1 {
         font-size: 36px;
     }
-    .services-overview h2, .why-choose-us h2, .service-areas h2 {
+    .services-overview h2,
+    .why-choose-us h2,
+    .service-areas h2 {
         font-size: 28px;
     }
     .footer-grid {
@@ -313,5 +342,8 @@ footer {
     }
     .footer-column {
         margin-bottom: 30px;
+    }
+    .top-header .logo img {
+        max-height: 90px; /* Scales down on small screens */
     }
 }
