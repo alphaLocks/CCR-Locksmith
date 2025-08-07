@@ -1,4 +1,4 @@
-/* General Body and Container Styles */
+/* --- General & Font Styles --- */
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -9,16 +9,16 @@ body {
 }
 
 .container {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* Header Section */
+/* --- Header & Navigation --- */
 header {
     background-color: #ffffff;
     padding: 15px 0;
-    border-bottom: 2px solid #006FBF;
+    border-bottom: 3px solid #006FBF;
 }
 
 .header-content {
@@ -27,26 +27,33 @@ header {
     align-items: center;
 }
 
-.header-contact span {
-    display: block;
+.logo img {
+    height: 65px;
+    width: auto;
+}
+
+.header-contact {
     text-align: right;
-    color: #555;
+}
+
+.header-contact span {
+    color: #333;
     font-size: 14px;
 }
 
 .header-contact a {
-    display: block;
-    text-align: right;
-    font-size: 22px;
-    font-weight: bold;
+    font-size: 24px;
+    font-weight: 700;
     color: #006FBF;
     text-decoration: none;
 }
 
-/* Main Navigation Bar */
 .main-nav {
     background-color: #ffffff;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #e0e0e0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .main-nav ul {
@@ -62,57 +69,178 @@ header {
 
 .main-nav ul li a {
     display: block;
-    padding: 15px 20px;
+    padding: 15px;
     color: #006FBF;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
     transition: color 0.3s;
 }
 
 .main-nav ul li a:hover {
-    color: #004a99; /* Darker blue on hover */
+    color: #004a99;
 }
 
-/* Main Content Area */
-main {
-    padding: 40px 0;
-}
-
-main h1 {
-    font-size: 36px;
-    color: #006FBF;
+/* --- Hero Section --- */
+.hero {
+    padding: 80px 0;
     text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 700;
     margin-bottom: 20px;
 }
 
-main p {
+.hero p {
     font-size: 18px;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-    color: #006FBF;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
 }
 
-/* Footer Section */
+.cta-button {
+    background-color: #006FBF;
+    color: #ffffff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #004a99;
+}
+
+/* --- Services & Features Sections --- */
+.services-overview, .why-choose-us, .service-areas {
+    padding: 60px 0;
+    background-color: #ffffff;
+    border-top: 1px solid #e0e0e0;
+}
+
+.services-overview h2, .why-choose-us h2, .service-areas h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.services-grid, .features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.service-card, .feature-item {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.service-card h3, .feature-item h3 {
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* --- Service Areas Section --- */
+.service-areas {
+    background-color: #FFDE59; /* Yellow background */
+    border: none;
+}
+
+.service-areas p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+}
+
+.area-list-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.area-column h3 {
+    border-bottom: 2px solid #006FBF;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.area-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* --- Footer Section --- */
 footer {
     background-color: #006FBF;
     color: #ffffff;
-    padding: 30px 0;
+    padding: 40px 0;
     text-align: center;
-    font-size: 14px;
-    margin-top: 40px; /* Add space above the footer */
+}
+
+footer h3 {
+    font-size: 24px;
+    margin: 0;
 }
 
 footer p {
-    margin: 5px 0;
-    text-align: center;
+    margin: 8px 0;
 }
 
 footer a {
     color: #ffffff;
     text-decoration: none;
+    transition: text-decoration 0.3s;
 }
 
 footer a:hover {
     text-decoration: underline;
+}
+
+.footer-contact {
+    margin: 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px 0;
+}
+
+.copyright {
+    font-size: 12px;
+    opacity: 0.8;
+    margin-top: 20px;
+}
+
+/* --- Responsive Design for Mobile --- */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .header-contact, .logo {
+        text-align: center;
+    }
+    .main-nav ul li {
+        display: block;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    .main-nav ul li:last-child {
+        border-bottom: none;
+    }
+    .services-grid, .features-grid, .area-list-container {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+    .hero h1 {
+        font-size: 36px;
+    }
+    .services-overview h2, .why-choose-us h2, .service-areas h2 {
+        font-size: 28px;
+    }
 }
