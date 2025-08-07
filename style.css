@@ -3,15 +3,16 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9; /* Light gray background */
     color: #333;
+    line-height: 1.6;
 }
 
 /* Header and Navigation Styles */
 header {
-    background-color: #004a99; /* A professional blue color */
+    background-color: #ffffff; /* White header */
     padding: 1rem 0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-bottom: 1px solid #eeeeee;
 }
 
 nav ul {
@@ -27,21 +28,22 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none; /* Removes the underline from links */
+    color: #004a99; /* Professional blue for links */
+    text-decoration: none;
     font-weight: bold;
-    font-size: 16px;
 }
 
 /* Main Content Styles */
 h1 {
+    color: #003366; /* Darker blue for headings */
     text-align: center;
-    color: #003366;
     margin-top: 40px;
 }
 
 p {
+    font-size: 16px;
     text-align: center;
-    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto 20px auto; /* Center paragraph and add space below */
     padding: 0 20px;
 }
