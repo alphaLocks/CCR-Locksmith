@@ -1,10 +1,10 @@
 /* General Body and Container Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif; /* New Font */
     margin: 0;
     padding: 0;
-    background-color: #f4f7f6; /* A very light, neutral background */
-    color: #333;
+    background-color: #FFDE59; /* Yellow Background */
+    color: #006FBF; /* Blue Text */
     line-height: 1.6;
 }
 
@@ -16,19 +16,15 @@ body {
 
 /* Header Section */
 header {
-    background-color: #ffffff;
+    background-color: #ffffff; /* White header for contrast */
     padding: 15px 0;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 2px solid #006FBF;
 }
 
 .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.logo img {
-    height: 50px; /* You can adjust this value */
 }
 
 .header-contact span {
@@ -43,13 +39,14 @@ header {
     text-align: right;
     font-size: 22px;
     font-weight: bold;
-    color: #004a99;
+    color: #006FBF; /* Blue Text */
     text-decoration: none;
 }
 
 /* Main Navigation Bar */
 .main-nav {
-    background-color: #004a99; /* Professional blue */
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
 }
 
 .main-nav ul {
@@ -66,24 +63,25 @@ header {
 .main-nav ul li a {
     display: block;
     padding: 15px 20px;
-    color: white;
+    color: #006FBF; /* Blue Text */
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s;
 }
 
 .main-nav ul li a:hover {
-    background-color: #003366; /* Darker blue on hover */
+    color: #004a99; /* Darker blue on hover */
 }
 
 /* Main Content Area */
 main {
     padding: 40px 0;
+    background-color: #FFDE59; /* Yellow Background */
 }
 
 main h1 {
     font-size: 36px;
-    color: #003366;
+    color: #006FBF; /* Blue Text */
     text-align: center;
     margin-bottom: 20px;
 }
@@ -93,12 +91,13 @@ main p {
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
+    color: #006FBF; /* Blue Text */
 }
 
 /* Footer Section */
 footer {
-    background-color: #333;
-    color: #f4f4f4;
+    background-color: #006FBF; /* Blue Footer */
+    color: #ffffff; /* White Text */
     padding: 30px 0;
     text-align: center;
     font-size: 14px;
@@ -110,7 +109,7 @@ footer p {
 }
 
 footer a {
-    color: #ffffff;
+    color: #ffffff; /* White links in footer */
     text-decoration: none;
 }
 
