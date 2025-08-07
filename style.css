@@ -28,7 +28,7 @@ body {
 }
 
 .top-header .logo img {
-    height: 70px;
+    height: 90px; /* Increased logo size */
     width: auto;
 }
 
