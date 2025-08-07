@@ -1,49 +1,99 @@
-/* General Body Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9; /* Light gray background */
-    color: #333;
-    line-height: 1.6;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Car Commercial Residential Emergency Locksmith</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #FFDE59; /* הצהוב מהלוגו */
+      color: #333;
+    }
 
-/* Header and Navigation Styles */
-header {
-    background-color: #ffffff; /* White header */
-    padding: 1rem 0;
-    border-bottom: 1px solid #eeeeee;
-}
+    header {
+      text-align: center;
+      padding: 30px 20px;
+    }
 
-nav ul {
-    list-style-type: none; /* Removes the bullet points */
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
+    .logo {
+      width: 100px;
+      margin-bottom: 10px;
+    }
 
-nav ul li {
-    display: inline-block; /* Makes the list items appear side-by-side */
-    margin: 0 15px;
-}
+    h1 {
+      color: #0072CE; /* כחול מודגש */
+      font-size: 22px;
+      font-weight: bold;
+      line-height: 1.4;
+    }
 
-nav ul li a {
-    color: #004a99; /* Professional blue for links */
-    text-decoration: none;
-    font-weight: bold;
-}
+    nav {
+      background-color: #fff;
+      padding: 15px;
+      text-align: center;
+      border-top: 2px solid #FF6EC7; /* ורוד מהלוגו */
+      border-bottom: 2px solid #FFA500; /* כתום מהלוגו */
+    }
 
-/* Main Content Styles */
-h1 {
-    color: #003366; /* Darker blue for headings */
-    text-align: center;
-    margin-top: 40px;
-}
+    nav a {
+      text-decoration: none;
+      color: #0072CE;
+      margin: 0 15px;
+      font-weight: bold;
+    }
 
-p {
-    font-size: 16px;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto 20px auto; /* Center paragraph and add space below */
-    padding: 0 20px;
-}
+    section {
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #0072CE;
+      color: white;
+      padding: 10px 20px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #fff;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      border-top: 2px solid #FFA500;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="Logo.png" alt="Locksmith Logo" class="logo" />
+    <h1>CAR COMMERCIAL<br>RESIDENTIAL EMERGENCY<br>LOCKSMITH SERVICE</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section>
+    <p>24/7 Mobile Locksmith in Southfield, MI – Car, Home, and Business</p>
+    <a href="tel:+13138893266" class="btn">Call Now: (313) 889-3266</a><br/>
+    <a href="mailto:carcommercialresidentiallocks@gmail.com" class="btn" style="margin-top:10px;background-color:#FF6EC7;">Email Us</a>
+  </section>
+
+  <footer>
+    Edwards Ave, Southfield, MI 48076<br/>
+    carcommercialresidentiallocks@gmail.com | (313) 889-3266
+  </footer>
+</body>
+</html>
